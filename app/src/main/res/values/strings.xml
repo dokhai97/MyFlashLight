@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyFlashLight</string>
+    <string name="switch_on">Switch On</string>
 </resources>
