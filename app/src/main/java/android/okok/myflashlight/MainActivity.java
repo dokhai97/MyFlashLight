@@ -3,6 +3,7 @@ package android.okok.myflashlight;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         relativeLayout = (RelativeLayout) findViewById(R.id.relLayMain);
+
+        startService(new Intent(this, FlashlightShakeToggle.class));
     }
 
     public void toggle(View view) {
